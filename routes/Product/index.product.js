@@ -38,7 +38,7 @@ const {
     deleteOneProduct
 } = require('./controller.product');
 
-router.get('/', auth, getAllProducts);
+router.get('/', getAllProducts);
 
 router.post('/', auth, upload.single('productImage'), createOneProduct);
 
